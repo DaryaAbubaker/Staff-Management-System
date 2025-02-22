@@ -1,0 +1,99 @@
+
+
+
+/* ========= button add============ */
+
+#addUserBtn {
+  background-color: #45a049; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add transition for smooth animation */
+  margin-top: 20px; /* Adjust the value as needed to move the button down */
+  position: fixed;
+  margin-left: 20px;
+
+
+}
+
+#addUserBtn:hover {
+  background-color: #193d1a; /* Darker green on hover */
+}
+
+
+/* ======input filter & reset===== */
+
+
+
+
+#filters {
+  margin-left: 550px;
+  margin-top: 30px;
+  opacity: 0; /* Start with the element hidden */
+  transform: translateY(-20px); /* Start with the element slightly above */
+  animation: fadeInSlideIn 1s forwards; /* Apply the combined fade-in and slide-in animation */
+}
+
+@keyframes fadeInSlideIn {
+  to {
+    opacity: 1; /* End with the element fully visible */
+    transform: translateY(0); /* End with the element in its original position */
+  }
+}
+
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white; /* Text color */
+  padding: 10px 20px; /* Increased padding for better touch target */
+  border-radius: 5px; /* Rounded corners */
+  border: none; /* Remove border */
+  cursor: pointer; /* Cursor changes to pointer when hovered */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect and scale */
+  font-size: 16px; /* Increased font size for better readability */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+}
+
+.delete-btn:hover {
+  background-color: #c82333; /* Darker red on hover */
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+.delete-btn:active {
+  background-color: #bd2130; /* Even darker red on click */
+  transform: scale(0.95); /* Slightly decrease size on click */
+}
+
+
+
+
+
+
+.btn-warning.btn-sm.edit-btn {
+  background-color: #ffc107;
+  border-color: #ffc107;
+  color: #fff;
+  padding: 8.7px 25px; /* Increased padding for better touch target */
+  font-size: 16px; /* Increased font size for better readability */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect and scale */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+}
+
+.btn-warning.btn-sm.edit-btn:hover {
+  background-color: #e0a800;
+  border-color: #d39e00;
+  color: #fff;
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+.btn-warning.btn-sm.edit-btn:active {
+  background-color: #d39e00;
+  border-color: #c69500;
+  transform: scale(0.95); /* Slightly decrease size on click */
+}

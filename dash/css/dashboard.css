@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+.dashboard-header {
+  background-color: #343a40;
+  color: white;
+  padding: 20px;
+}
+.dashboard-header h2 {
+  margin: 0;
+}
+.card-stat {
+  border-radius: 10px;
+  background: #007bff;
+  color: white;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  /* transition: background 0.3s ease; */
+}
+.card-stat:hover {
+  background: #0056b3;
+  cursor: pointer;
+}
+.card-stat .card-body {
+  font-size: 1.5rem;
+}
+.stat-title {
+  font-size: 0.85rem;
+  color: #cbd3da;
+}
+.recent-users-table th {
+  background-color: #007bff;
+  color: white;
+}
+.recent-users-table td {
+  vertical-align: middle;
+}
+.alert-box {
+  margin-top: 20px;
+}
+.alert-box .alert {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Chart Container Adjustments */
+.chart-container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+canvas {
+  max-width: 100%;
+  max-height: 400px;
+  width: 100% !important;
+  height: auto !important;
+}
+/* Adjust container width for smaller screens */
+@media (max-width: 768px) {
+  .chart-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .card-stat {
+    padding: 15px;
+  }
+  .stat-title {
+    font-size: 1rem;
+  }
+}
